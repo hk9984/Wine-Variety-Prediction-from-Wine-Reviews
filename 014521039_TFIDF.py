@@ -130,6 +130,8 @@ def statistics(y_test, y_pred):
     
 #Using maximum 300 characters from every column
 pd.set_option('display.max_colwidth', 300)
+
+#change the dataset directory path according to your file structure
 data = pd.read_csv("C:\\Users\\shobhit\\Downloads\\winemag-data_first150k.csv")
 stopwords = nltk.corpus.stopwords.words('english')
 labels = data['variety']
